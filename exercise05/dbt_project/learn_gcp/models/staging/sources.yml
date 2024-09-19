@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: learn_gcp
+    database: ferg-sandbox-gcp
+    schema: kid_tables_source
+    tables:
+      - name: activity_mobile_data_activity
+      - name: activity_sms_record
+      - name: activity_voice_call_record
