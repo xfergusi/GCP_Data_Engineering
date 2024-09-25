@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: activity_mobile_data_activity
+  - name: int_activity_mobile_data_activity
     # columns:
     #   - name: id
     #     description: "The primary key for this table"
@@ -9,7 +9,7 @@ models:
     #       - unique
     #       - not_null
 
-  - name: activity_sms_record 
+  - name: int_activity_sms_record 
     # columns:
     #   - name: id
     #     description: "The primary key for this table"
@@ -17,7 +17,15 @@ models:
     #       - unique
     #       - not_null
 
-  - name: activity_voice_call_record
+  - name: int_activity_voice_call_record
+    # columns:
+    #   - name: id
+    #     description: "The primary key for this table"
+    #     data_tests:
+    #       - unique
+    #       - not_null
+
+  - name: int_subscriber
     # columns:
     #   - name: id
     #     description: "The primary key for this table"
