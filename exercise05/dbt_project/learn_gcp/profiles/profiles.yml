@@ -1,0 +1,82 @@
+aginic_datawarehouse:
+  outputs:
+    dev:
+      dataset: mordor_travel
+      fixed_retries: 1
+      location: australia-southeast1
+      method: oauth
+      project: aginic-data-warehouse
+      threads: 32
+      timeout_seconds: 300
+      type: bigquery
+  target: dev
+default:
+  outputs:
+    dev:
+      database: DataVault
+      driver: ODBC Driver 17 for SQL Server
+      host: desmssqldev.database.windows.net
+      password: G9AzcYTuzj9z
+      schema: dev_ferg
+      type: sqlserver
+      user: dbt-dev-user
+      windows_login: false
+  target: dev
+elementary:
+  outputs:
+    default:
+      dataset: YOURNAME_dev_elementary
+      fixed_retries: 1
+      location: australia-southeast1
+      method: oauth
+      project: mantel-data-warehouse-poc
+      threads: 32
+      timeout_seconds: 300
+      type: bigquery
+jaffle_shop:
+  outputs:
+    fabric-dev:
+      authentication: CLI
+      database: test
+      driver: ODBC Driver 18 for SQL Server
+      host: 7euqz7kpv5weli7yw7sm3ayili-6bi4vtu45cnenajrw3zanisxdm.datawarehouse.fabric.microsoft.com
+      port: 1433
+      schema: dbo
+      threads: 4
+      type: fabric
+  target: fabric-dev
+learn_data_dbt_project:
+  outputs:
+    dev:
+      OPTIONAL_CONFIG: VALUE
+      dataset: Kid_tables
+      method: oauth
+      project: ferg-sandbox-gcp
+      threads: 4
+      type: bigquery
+  target: dev
+
+learn_gcp:
+  outputs:
+    dev:
+      dataset: dev
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      method: oauth
+      location: australia-southeast1
+      priority: interactive
+      project: ferg-sandbox-gcp
+      threads: 1
+      type: bigquery
+  target: dev
+
+mantelgroup:
+  outputs:
+    dev:
+      dataset: ferg_dev
+      location: australia-southeast1
+      method: oauth
+      project: continuous-assurance-dev
+      threads: 4
+      type: bigquery
+  target: dev
