@@ -1,0 +1,37 @@
+1. Data Catalog
+
+A data catalog is a centralized repository that stores metadata about data assets available across an organization. It provides information about what data exists, where it is stored, its schema, quality, usage, and access controls.
+
+    Example: In GCP, Google Cloud Data Catalog allows users to search for datasets, tables, or other resources within the cloud environment.
+
+Importance:
+
+    Discoverability: Users can quickly find the data they need without manually browsing through storage or querying databases.
+    Improves Data Governance: Ensures that data is managed, classified, and controlled according to policies.
+    Enhances Collaboration: Teams can share information about datasets, reducing duplicate work.
+
+2. Data Lineage
+
+Data lineage tracks the flow of data through an organization’s systems, from its origin to transformations and its final state. It provides a visual or documented path showing how data was sourced, processed, and consumed.
+
+    Example: In GCP, Dataflow or BigQuery can help track lineage by documenting SQL transformations.
+
+Importance:
+
+    Transparency: Knowing how data moves through the system ensures that users understand its history.
+    Trust in Data Quality: Users can trace errors or inconsistencies to the source, aiding debugging.
+    Regulatory Compliance: Many data regulations (like GDPR) require organizations to show where sensitive data flows through their systems.
+
+3. Business Glossary
+
+A business glossary is a collection of agreed-upon definitions for business terms used across an organization. It ensures that everyone uses consistent terminology when referring to data, metrics, and processes.
+
+    Example: A term like "Customer Lifetime Value" (CLV) could have a specific, agreed-upon formula in the glossary.
+
+Importance:
+
+    Consistency: Ensures that different teams interpret key metrics or terms the same way.
+    Prevents Miscommunication: Reduces ambiguity by providing clear definitions, avoiding conflicting interpretations.
+    Improves Data Quality: Clear definitions ensure that the right data is collected and processed according to agreed rules.
+
+These concepts work together to promote effective data governance, ensuring that data is discoverable, trustworthy, and well-understood across your GCP environment.
